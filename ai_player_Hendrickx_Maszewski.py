@@ -7,11 +7,9 @@ import numpy
 class AIPlayer(Player):
     """This player should implement a heuristic along with a min-max and alpha
     beta search to """
-	
     def __init__(self):
         super().__init__()
         self.name = "Timo MASZEWSKI et Niels HENDRICKX"
-
 
     def getColumn(self, board):
         return self.alphabeta(board)
