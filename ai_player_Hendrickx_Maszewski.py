@@ -1,7 +1,8 @@
 from player import Player
 from copy import deepcopy
 import math
-
+import random
+import numpy
 
 class AIPlayer(Player):
     """This player should implement a heuristic along with a min-max and alpha
@@ -89,7 +90,6 @@ class AIPlayer(Player):
             if v>meilleur_score:
                 meilleur_score = v
                 coup = action
-
         return coup
 
 
